@@ -10,10 +10,10 @@
   <header>
     <div class="container">
       <h1>College Question Papers</h1>
-      <button class="menu-togglealso">&#9776;</button>
+      <button class="menu-toggle">&#9776;</button>
       <nav>
         <ul>
-          <li><a href="#home">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="#subjects">Subjects</a></li>
           <li><a href="#about">About</a></li>
           
@@ -24,7 +24,7 @@
 
   <main>
     <section id="home" class="section">
-      <div class="container">
+      <div class="container"> 
         <h2>Welcome to our Question Papers Repository!</h2>
         <p>Find and download previous year's question papers.</p>
       </div>
@@ -33,10 +33,45 @@
     <section id="subjects" class="section">
       <div class="container">
         <h2>Subjects</h2>
-        <input type="text" id="searchInput" placeholder="Search for a subject...">
+        <div class="search-section">
+          <input type="text" id="searchInput" placeholder="Search for a subject...">
+          <div class="filters">
+            <label for="department">Department:</label>
+            <select id="department">
+              <option value="">All Departments</option>
+              <option value="AIML">AIML</option>
+              <option value="CSE">CSE</option>
+              <option value="CST">CST</option>
+              <option value="CSBS">CSBS</option>
+              <option value="ECE">ECE</option>
+              <option value="EE">EE</option>
+              <option value="IT">IT</option>
+              <option value="ME">ME</option>
+              <option value="CE">CE</option>
+              
+            </select>
+
+            <label for="semester">Semester:</label>
+            <select id="semester">
+              <option value="">All Semesters</option>
+              <option value="1">Semester 1</option>
+              <option value="2">Semester 2</option>
+              <option value="3">Semester 3</option>
+              <option value="4">Semester 4</option>
+              <option value="5">Semester 5</option>
+              <option value="6">Semester 6</option>
+              <option value="7">Semester 7</option>
+              <option value="8">Semester 8</option>
+            </select>
+
+            <label for="backlog">Backlog:</label>
+            <input type="checkbox" id="backlog">
+          </div>
+        </div>
+
         <ul id="subjectsList">
-          <li><a href="streams/subject.html" target="_blank">AIML</a></li>
-          <li><a href="streams/subject.html" target="_blank">ECE</a></li>
+          <li><a href="#" class="subject-link" data-subject="AIML">AIML</a></li>
+          <li><a href="#" class="subject-link" data-subject="CSE">CSE</a></li>
           
         </ul>
       </div>
@@ -48,7 +83,7 @@
         <p>This website is dedicated to providing a repository of previous year's question papers for our college.</p>
       </div>
     </section>
-   
+    
   </main>
 
   <footer>
