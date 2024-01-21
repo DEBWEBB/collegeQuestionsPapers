@@ -102,6 +102,52 @@ ul li a:hover {
   color: #e74c3c;
 }
 
+/* Add your previous CSS styles here */
+
+/* Additional styles for filters and search section */
+.search-section {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 60%;
+  font-size: 1em;
+}
+
+.filters {
+  display: flex;
+  margin-left: 20px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+select {
+  padding: 8px;
+  font-size: 1em;
+}
+
+/* Animation for filters */
+.filters, input[type="text"] {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 /* Footer styles */
 footer {
   background-color: #3498db;
